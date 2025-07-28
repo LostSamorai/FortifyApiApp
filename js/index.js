@@ -1,10 +1,5 @@
  var cartona = document.querySelector('.cartona');
  var extendeddata = []; 
- 
-
-
-
-
 var btn = document.querySelectorAll('.Btn');
 for(let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("mouseenter",function(){
@@ -17,15 +12,16 @@ for(let i = 0; i < btn.length; i++) {
 showMeals("pizza");
 
 function filldata(arr) {
-    console.log(arr[0].title);
+   
  var alldata = '';
             for (let i = 0; i < arr.length; i++) {
                 var current = `      
                 <div class="card">
-                  <img  src="${arr[i].image_url}" alt="Food img style='width:20%' position absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;"> 
+                  <img  src="${arr[i].image_url}" alt="Food image"> 
                     <h4>${arr[i].publisher}</h4>
                     <p>${arr[i].title || 'No description available'}</p>
-                </div>`;
+                    <button class="Btn" onclick="alert('button${i}clicked')">Add To Cart</button>
+                    </div>`;
               alldata += current;
 
             }
