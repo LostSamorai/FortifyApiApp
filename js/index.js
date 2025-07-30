@@ -47,3 +47,4 @@ function showMeals(mealsType){
         }
     };
 }
+console.log(!!"flase");
