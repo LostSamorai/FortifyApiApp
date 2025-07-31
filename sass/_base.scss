@@ -1,0 +1,11 @@
+$bg-color:teal;
+$bg-btn:teal !default;
+$bg-nav:gray;
+.navbar{
+    padding: 20px;
+
+}
+.focus{
+    @extend .navbar;
+    color: aqua;
+}

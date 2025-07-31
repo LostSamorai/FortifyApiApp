@@ -1,0 +1,52 @@
+@use "_base" with(
+    $bg-btn:teal
+);
+
+
+$base-color :#09c;
+
+.bg-color{
+    background-color: $base-color;
+}
+
+.cartona{
+    background-color: #09c;
+    card{
+        background-color: beige;
+            card-Btn{
+                background-color: aquamarine;
+
+            }
+    }
+}  
+
+
+
+$btn-bg-color:tomato;
+@mixin btn-style{
+    border-radius: 20px;
+    background-color: $btn-bg-color;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.navbar{
+    background-color: #09c; 
+    Btn {
+        @include btn-style;
+    }
+}
+$numbersBtn:1 2 3;
+@function testFunction($arr){
+    
+    @each $current in $arr{
+    
+        @debug $current;
+        @return#{$current};
+    }
+    
+}
+.card{
+background-color: testFunction($numbersBtn);
+}

@@ -20,7 +20,7 @@ function filldata(arr) {
                   <img  src="${arr[i].image_url}" alt="Food image"> 
                     <h4>${arr[i].publisher}</h4>
                     <p>${arr[i].title || 'No description available'}</p>
-                    <button class="Btn" onclick="alert('button${i}clicked')">Add To Cart</button>
+                    <button class="card-Btn" onclick="alert('button${i}clicked')">Add To Cart</button>
                     </div>`;
               alldata += current;
 
@@ -47,4 +47,4 @@ function showMeals(mealsType){
         }
     };
 }
-console.log(!!"flase");
+console.log(!!"flafalse");

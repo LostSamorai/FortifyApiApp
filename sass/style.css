@@ -1,0 +1,36 @@
+.navbar, .focus {
+  padding: 20px;
+}
+
+.focus {
+  color: aqua;
+}
+
+.bg-color {
+  background-color: #09c;
+}
+
+.cartona {
+  background-color: #09c;
+}
+.cartona card {
+  background-color: beige;
+}
+.cartona card card-Btn {
+  background-color: aquamarine;
+}
+
+.navbar {
+  background-color: #09c;
+}
+.navbar Btn {
+  border-radius: 20px;
+  background-color: tomato;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.card {
+  background-color: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
